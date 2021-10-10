@@ -1,1 +1,207 @@
+body,
+        div {
+            margin: 0;
+            padding: 0;
+        }
 
+        .header {
+            height: 80px;
+            background-color: #87e8de;
+            position: relative;
+            animation-name: headdong;
+            animation-duration: 3s;
+            animation-delay: 0s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .tit {
+            position: relative;
+            font-size: 25px;
+            animation-name: titdong;
+            animation-duration: 3s;
+            animation-delay: 3s;
+        }
+
+        .main {
+            height: 580px;
+            background-color: #00fff2;
+            animation-name: maindong;
+            animation-duration: 4s;
+            animation-delay: 3s;
+        }
+
+        .footer {
+            height: 103px;
+            background-color: #36cfc9;
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            animation-name: foordong;
+            animation-duration: 3s;
+
+        }
+
+        .btn {
+            width: 60px;
+            height: 40px;
+            background-color: #ff9900;
+            position: relative;
+            right: 20px;
+            border: none;
+            border-radius: 10px;
+            animation-name: btndong;
+            animation-duration: 4s;
+            animation-delay: 4s;
+            cursor: pointer;
+        }
+
+        @keyframes headdong {
+            from {
+                background-color: white;
+                transform: scale(0, 1)
+            }
+
+            to {
+                background-color: #87e8de;
+            }
+        }
+
+        @keyframes maindong {
+            0% {
+                background-color: #fff;
+                transform: rotateX(120deg)
+            }
+
+            100% {
+                background-color: #00fff2;
+            }
+        }
+
+        @keyframes foordong {
+            from {
+                background-color: #fff;
+                transform: scale(0, 1)
+            }
+
+            to {
+                background-color: #36cfc9;
+            }
+        }
+
+        @keyframes btndong {
+            from {
+                -webkit-transform: rotate(360deg)
+            }
+        }
+
+        @keyframes titdong {
+            from {
+                top: -60px;
+            }
+
+            to {
+                top: 10px;
+            }
+        }
+
+        .ool {
+            position: relative;
+            animation-name: shangla;
+            animation-duration: 3s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes shangla {
+            0% {
+                transform: translateY(0px)
+            }
+
+            100% {
+                transform: translateY(-800px)
+            }
+        }
+
+        .ication {
+            font-size: .8em;
+            text-align: center;
+            padding: 10px;
+            background-color: #111;
+            color: #fff;
+            box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, .3);
+            position: relative;
+            font-weight: bold;
+            /* animation-name: bounce;
+            animation-duration: 3s; */
+            animation: bounce 1800ms ease-out;
+            animation-delay: 5.5s;
+        }
+
+        @keyframes bounce {
+            0% {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+
+            5% {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+
+            15% {
+                transform: translateY(0);
+                padding-bottom: 5px;
+            }
+
+            30% {
+                transform: translateY(-50%);
+
+            }
+
+            40% {
+                transform: translateY(0%);
+                padding-bottom: 6px;
+            }
+
+            50% {
+                transform: translateY(-30%);
+
+            }
+
+            70% {
+                transform: translateY(0%);
+                padding-bottom: 7px;
+            }
+
+            80% {
+                transform: translateY(-15%);
+
+            }
+
+            90% {
+                transform: translateY(0%);
+                padding-bottom: 8px;
+            }
+
+            95% {
+                transform: translateY(-7%);
+
+            }
+
+            97% {
+                transform: translateY(0%);
+                padding-bottom: 9px;
+            }
+
+            99% {
+                transform: translateY(-3%);
+
+            }
+
+            100% {
+                transform: translateY(0);
+                padding-bottom: 9px;
+                opacity: 1;
+            }
+        }
