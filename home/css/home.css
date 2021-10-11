@@ -1,0 +1,135 @@
+body,
+div {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    width: 100%;
+    height: 180px;
+    background-color: #337bcf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-bao {
+    width: 75%;
+    height: 180px;
+    /* background-color: #33cf4d; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-zuo {
+    width: 75%;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-you {
+    width: 30%;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-you img {
+    height: 80px;
+}
+
+.tit {
+    font-size: 50px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.tit-n {
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(157, 220, 255);
+}
+
+.main {
+    width: 100%;
+    height: 583px;
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+}
+
+.main-bao {
+    width: 70%;
+    height: 583px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-zuo {
+    width: 75%;
+    height: 583px;
+    background-color: #fbfbfb;
+    float: left;
+    margin-right: 20px;
+    box-shadow: 8px 0px 7px rgb(236, 236, 236);
+}
+
+.main-tent {
+    display: flex;
+    flex-direction: column;
+    color: rgb(102, 102, 102);
+}
+
+.main-tent span {
+    margin-top: 23px;
+}
+
+.main-tent1 {
+    display: flex;
+    flex-direction: column;
+    color: rgb(102, 102, 102);
+}
+
+.transform {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.main-you {
+    width: 25%;
+    height: 583px;
+    background-color: rgb(250, 250, 250);
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    margin-left: 5px;
+}
+
+.main-you div {
+    width: 80%;
+    height: 58px;
+    background-color: #297ed5;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    border-radius: 15px;
+    border-bottom: 1px solid orange;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.discolor{
+    color: rgb(208, 224, 255);
+    margin-right: 5px;
+}
