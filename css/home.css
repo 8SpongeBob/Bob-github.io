@@ -4,9 +4,17 @@ div {
     padding: 0;
 }
 
+body{
+    min-width: 900px
+}
+
+:root{
+    --h:180px;
+}
+
 .header {
     width: 100%;
-    height: 180px;
+    height: var(--h);
     background-color: #337bcf;
     display: flex;
     justify-content: center;
@@ -15,7 +23,7 @@ div {
 
 .header-bao {
     width: 75%;
-    height: 180px;
+    height: var(--h);
     /* background-color: #33cf4d; */
     display: flex;
     justify-content: center;
@@ -24,7 +32,7 @@ div {
 
 .header-zuo {
     width: 75%;
-    height: 180px;
+    height: var(--h);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -33,7 +41,7 @@ div {
 
 .header-you {
     width: 30%;
-    height: 180px;
+    height: var(--h);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -44,20 +52,20 @@ div {
 }
 
 .tit {
-    font-size: 50px;
+    font-size: 3.5em;
     font-weight: 600;
     color: #fff;
 }
 
 .tit-n {
-    font-size: 18px;
+    font-size: 1.3em;
     font-weight: 600;
     color: rgb(157, 220, 255);
 }
 
 .main {
     width: 100%;
-    height: 583px;
+    height: calc(100vh - var(--h));
     background-color: #fafafa;
     display: flex;
     justify-content: center;
@@ -65,7 +73,7 @@ div {
 
 .main-bao {
     width: 70%;
-    height: 583px;
+    height: calc(100vh - var(--h));
     display: flex;
     justify-content: center;
     align-items: center;
@@ -73,11 +81,11 @@ div {
 
 .main-zuo {
     width: 75%;
-    height: 583px;
+    height: calc(100vh - var(--h));
     background-color: #fbfbfb;
     float: left;
-    margin-right: 20px;
-    box-shadow: 8px 0px 7px rgb(236, 236, 236);
+    display: flex;
+    /* box-shadow: 8px 0px 7px rgb(236, 236, 236); */
 }
 
 .main-tent {
@@ -106,23 +114,19 @@ div {
 
 .main-you {
     width: 25%;
-    height: 583px;
+    height: calc(100vh - var(--h));
     background-color: rgb(250, 250, 250);
-    display: flex;
-    justify-content: start;
-    flex-direction: column;
-    margin-left: 5px;
+    /* margin-left: 25px; */
 }
 
 .main-you div {
-    width: 80%;
+    width: 210px;
     height: 58px;
     background-color: #297ed5;
     color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 15px;
+    text-align: center;
+    line-height: 58px;
+    margin-top: 25px;
     border-radius: 15px;
     border-bottom: 1px solid orange;
     font-size: 18px;
@@ -132,4 +136,8 @@ div {
 .discolor{
     color: rgb(208, 224, 255);
     margin-right: 5px;
+}
+
+.sid{
+    width: 80px;
 }
