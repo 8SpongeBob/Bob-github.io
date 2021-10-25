@@ -2,6 +2,8 @@ import articles from "../article_route";
 import "../blog/blog.less";
 import Ellipsis from "../../assets/utils/utils";
 
+// import Markdown from "../../assets/js/text";
+
 // 1.默认赋值
 // 2.一个方法只能做一个功能，解耦；
 // 3.方法的入参必传项参数放前面，非必填参数靠后；
@@ -37,6 +39,15 @@ articles.forEach((items) => {
   cloneNode.querySelector(".transform").innerHTML = items.article;
   m1.appendChild(cloneNode);
 });
+
+var title = document.querySelectorAll(".title");
+title.forEach((element) => {
+  console.log(element);
+  element.onclick = function () {
+    window.location.href = "flig.html?id=" + this.dataset.id;
+  };
+});
+
 var text = document.querySelectorAll(".text1");
 text.forEach((element) => {
   let ellipsis = new Ellipsis({
@@ -63,9 +74,9 @@ text.forEach((element) => {
 // console.log(this.dataset.id);
 // console.log(this.dataset.abc);
 // console.log(this.getAttribute("data-id")); //如果考虑兼容性要用这一步
-document.querySelector("h1").onclick = function () {
-  window.location.href = "flig.html?id=" + this.dataset.id;
-};
+// document.querySelector("h1").onclick = function () {
+//   window.location.href = "flig.html?id=" + this.dataset.id;
+// };
 
 // 网页快捷键
 // ctrl + L;地址栏
@@ -74,3 +85,27 @@ document.querySelector("h1").onclick = function () {
 // 软件和页面之间切换：win + D;
 // 打开文件夹 ：win+E
 // 历史上一级页面;ctrl + shift + T;
+
+// var params = {
+//   type: "1",
+//   id: 1,
+//   name: "xiaoming",
+// };
+//   get(key) {
+//     var empty = "";
+//     this.url = this.url.split("?");
+//     this.url.forEach((item) => {
+//       if (item.indexOf(key) > -1) {
+//         // empty = item.substring(item.indexOf("=") + 1, item.length);
+//       }
+//     });
+//     return empty;
+//   }
+
+// var empty = "";
+// for (const key in this.url) {
+//   empty += key + "=" + this.url[key] + "&";
+// }
+// empty = empty.substr(0, empty.length - 1);
+
+// return empty;
