@@ -1,0 +1,37 @@
+.box {
+    width: 100px;
+    height: 100px;
+}
+
+.change {
+    animation: move 2s;
+}
+
+@keyframes move {
+    from {
+        background-color: white;
+        transform: scale(0, 1)
+    }
+
+    to {
+        background-color: #87e8de;
+    }
+
+}
+.ospan{
+    position: relative;
+    left: -600px;
+    animation-name: headdong;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes headdong {
+    to{
+        left: 0px;
+    }
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+

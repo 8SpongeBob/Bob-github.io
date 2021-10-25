@@ -1,0 +1,1 @@
+new Ellipsis({el:document.querySelector(".list"),textCount:30,findAllButtonText:">>查看所有",showFindAllButton:!0}).exec();
